@@ -490,11 +490,13 @@ header .container nav .menu-icon {
     .services .container {
         gap: 40px;
     }
+
     .services .container .cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .services .container .cards .card {
         width: calc(50% - 10px);
     }
@@ -506,3 +508,70 @@ header .container nav .menu-icon {
     }
 }
 
+.kran {
+    background-image: url(../images/kran.jpg);
+    background-size: 1440px 545px;
+}
+
+.kran .container{
+    padding-top: 116px;
+    padding-bottom: 116px;
+}
+.kran .container h1 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    color: #191919;
+    width: 604px;
+}
+
+.kran .container p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 30.01px;
+    letter-spacing: 0%;
+    color: #605E5D;
+    width: 574px;
+    margin-bottom: 35px;
+}
+
+.kran .container .btns button:first-child {
+    background-color: #FF4D01;
+    border: none;
+    width: 129px;
+    height: 54px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.kran .container .btns {
+    display: flex;
+    gap: 28px;
+}
+
+.kran .container .btns button:last-child {
+    width: 129px;
+    height: 54px;
+    background-color: transparent;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #191919;
+    cursor: pointer;
+}
