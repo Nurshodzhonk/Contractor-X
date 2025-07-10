@@ -511,12 +511,15 @@ header .container nav .menu-icon {
 .kran {
     background-image: url(../images/kran.jpg);
     background-size: 1440px 545px;
+    background-repeat: no-repeat;
+    margin-top: 200px;
 }
 
-.kran .container{
+.kran .container {
     padding-top: 116px;
     padding-bottom: 116px;
 }
+
 .kran .container h1 {
     font-family: Barlow;
     font-weight: 400;
@@ -574,4 +577,128 @@ header .container nav .menu-icon {
     text-align: center;
     color: #191919;
     cursor: pointer;
+    border: none;
+}
+
+.choose-us .hero-left img {
+    width: 534px;
+    height: 534px;
+}
+
+.choose-us .hero-left {
+    display: flex;
+}
+
+.choose-us .hero-left .content {
+    margin-left: 82px;
+}
+
+.choose-us .hero-left .content h3 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FF4D01;
+}
+
+.choose-us .hero-left .content h1 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    color: #191919;
+    width: 473px;
+}
+
+.choose-us .hero-left .content p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 30.01px;
+    letter-spacing: 0%;
+    color: #605E5D;
+}
+
+.choose-us .hero-left .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.choose-us .hero-left .content ul li img {
+    width: 25px;
+    height: 25px;
+    border-width: 2.5px;
+    display: inline;
+}
+
+.choose-us .hero-right {
+    display: flex;
+    margin-top: 100px;
+}
+
+.choose-us .hero-right img {
+    width: 534px;
+    height: 534px;
+}
+
+.choose-us .hero-right .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-us .hero-right .content h1 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    color: #191919;
+    margin-bottom: 19px;
+}
+
+.choose-us .hero-right .content p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 30.01px;
+    letter-spacing: 0%;
+    color: #605E5D;
+    margin-bottom: 10px;
+}
+
+.choose-us .hero-right .content ul {
+    display: flex;
+    gap: 40px;
+}
+
+.choose-us .hero-right .content ul li {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #191919;
+}
+
+.choose-us .hero-right .content ul li span {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FF4D01;
 }
