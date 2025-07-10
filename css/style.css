@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    border: 2px solid red;
+}
+
+.green {
+    border: 2px solid green;
+}
+
+.yellow {
+    border: 2px solid yellow;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("../images/header-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    color: white;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 32px;
+}
+
+header .container nav ul {
+    display: none;
+}
+
+header .container nav .menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.header-main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.header-main-flex h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    max-width: 100%;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 72px;
+    line-height: 84.02px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.header-main-flex p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 100%;
+}
+
+.header-main-flex .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.header-main-flex .btns button {
+    width: 100%;
+    height: 54px;
+    border: 2px solid white;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.header-main-flex .btns button:first-child {
+    background-color: #FF4D01;
+    border-color: #FF4D01;
+}
+
+.header-main-flex .btns button:last-child {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header-main-flex h1 {
+        font-size: 60px;
+        max-width: 660px;
+    }
+
+    .header-main-flex p {
+        font-size: 18px;
+        max-width: 640px;
+    }
+
+    .header-main-flex .btns {
+        flex-direction: row;
+        gap: 32px;
+        width: auto;
+    }
+
+    .header-main-flex .btns button {
+        width: 129px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1280px;
+        width: 80%;
+    }
+
+    header {
+        padding-bottom: 252px;
+    }
+
+    header .container nav .menu-icon {
+        display: none;
+    }
+
+    header .container nav ul {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    header .container nav ul li {
+        font-size: 18px;
+        line-height: 30.01px;
+        cursor: pointer;
+    }
+
+    header .container nav ul button {
+        background-color: #FF4D01;
+        border: none;
+        width: 129px;
+        height: 54px;
+        font-size: 16px;
+        color: white;
+    }
+
+    .header-main-flex h1 {
+        font-size: 72px;
+        line-height: 84.02px;
+    }
+}
+
+.hero .container {
+    margin-top: 100px;
+    display: flex;
+}
+
+.hero .container img {
+    width: 440px;
+    height: 650px;
+}
+
+.hero .container .content {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.hero .container .content h3 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FF4D01;
+}
+
+.hero .container .content h1 {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 61.99px;
+    letter-spacing: 0%;
+    width: 522px;
+    color: #191919;
+}
+
+.hero .container .content .content-p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 26.01px;
+    letter-spacing: 0%;
+    color: #605E5D;
+    height: 121px;
+}
+.hero .container .content .projects {
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.hero .container .content .projects ul {
+    display: flex;
+    gap: 86px;
+}
+
+.hero .container .content .projects ul span {
+    color: #FF4D01;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 72px;
+    line-height: 84.02px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero .container .content .projects ul li {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 72px;
+    line-height: 84.02px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #191919;
+}
+
+.hero .container .content button {
+    background-color: rgba(245, 222, 179, 0);
+    width: 237px;
+    height: 75px;
+    opacity: 1;
+    border-width: 2px;
+    border: 2px solid #191919;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #191919;
+    cursor: pointer;
+}
