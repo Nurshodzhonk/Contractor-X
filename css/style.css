@@ -21,6 +21,14 @@ img {
     display: block;
 }
 
+.yellow {
+    border: 2px solid yellow;
+}
+
+.red {
+    border: 2px solid red;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -153,6 +161,13 @@ header .container nav .menu-icon {
     color: #605E5D;
     height: auto;
     margin-top: 16px;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 30.01px;
+    letter-spacing: 0%;
+
 }
 
 .hero .container .content .projects {
@@ -167,6 +182,17 @@ header .container nav .menu-icon {
     gap: 20px;
 }
 
+.hero .container .content .projects ul p {
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #989899;
+}
+
 .hero .container .content .projects ul span,
 .hero .container .content .projects ul li {
     font-size: 48px;
@@ -179,6 +205,14 @@ header .container nav .menu-icon {
 
 .hero .container .content .projects ul li {
     color: #191919;
+    font-family: Barlow;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 72px;
+    line-height: 84.02px;
+    letter-spacing: 0%;
+    text-align: center;
+
 }
 
 .hero .container .content button {
@@ -324,3 +358,151 @@ header .container nav .menu-icon {
         height: 75px;
     }
 }
+
+.services .container {
+    width: 90%;
+    margin: 200px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.services .container h3 {
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FF4D01;
+    align-self: flex-start;
+}
+
+.services .container .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .container .btns .btns2 {
+    display: flex;
+    gap: 28px;
+}
+
+.services .container .btns .btns2 .get {
+    background-color: #FF4D01;
+    border: none;
+    width: 129px;
+    height: 54px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.services .container .btns button {
+    border: 2px solid #191919;
+    width: 200px;
+    height: 54px;
+    background-color: transparent;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #191919;
+    cursor: pointer;
+}
+
+.services .container .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services .container .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+.services .container .cards .card img {
+    width: 70px;
+    height: 68px;
+    margin-bottom: 15px;
+}
+
+.services .container .cards .card h4 {
+    margin: 0 0 14px 0;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 48.01px;
+    letter-spacing: 0%;
+    color: #191919;
+}
+
+.services .container .cards .card p {
+    margin: 0 0 13px 0;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25.01px;
+    letter-spacing: 0%;
+    color: #605E5D;
+}
+
+.services .container .cards .card .learn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.services .container .cards .card .learn div {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+}
+
+.services .container .cards .card .learn p {
+    margin: 0;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #191919;
+}
+
+@media screen and (min-width: 768px) {
+    .services .container {
+        gap: 40px;
+    }
+    .services .container .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services .container .cards .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services .container .cards .card {
+        width: calc((100% / 3) - 13.33px);
+    }
+}
+
