@@ -21,23 +21,6 @@ img {
     display: block;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.red {
-    border: 2px solid red;
-}
-
-.green {
-    border: 2px solid green;
-}
-
-.yellow {
-    border: 2px solid yellow;
-}
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -76,18 +59,14 @@ header .container nav .menu-icon {
 }
 
 .header-main-flex h1 {
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: 0%;
+    text-align: center;
     font-size: 42px;
     line-height: 1.2;
     margin-bottom: 16px;
     max-width: 100%;
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 72px;
-    line-height: 84.02px;
-    letter-spacing: 0%;
-    text-align: center;
-
 }
 
 .header-main-flex p {
@@ -123,6 +102,82 @@ header .container nav .menu-icon {
     background-color: transparent;
 }
 
+.hero .container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.hero .container .content h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FF4D01;
+}
+
+.hero .container .content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    width: 100%;
+    color: #191919;
+    margin-top: 8px;
+}
+
+.hero .container .content .content-p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #605E5D;
+    height: auto;
+    margin-top: 16px;
+}
+
+.hero .container .content .projects {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero .container .content .projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero .container .content .projects ul span,
+.hero .container .content .projects ul li {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.hero .container .content .projects ul span {
+    color: #FF4D01;
+}
+
+.hero .container .content .projects ul li {
+    color: #191919;
+}
+
+.hero .container .content button {
+    width: 100%;
+    max-width: 240px;
+    height: 65px;
+    border: 2px solid #191919;
+    font-size: 18px;
+    color: #191919;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -146,6 +201,16 @@ header .container nav .menu-icon {
 
     .header-main-flex .btns button {
         width: 129px;
+    }
+
+    .hero .container .content h1 {
+        font-size: 48px;
+    }
+
+    .hero .container .content .projects ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
     }
 }
 
@@ -188,100 +253,60 @@ header .container nav .menu-icon {
         font-size: 72px;
         line-height: 84.02px;
     }
-}
 
-.hero .container {
-    margin-top: 100px;
-    display: flex;
-}
+    .hero .container {
+        margin-top: 100px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
 
-.hero .container img {
-    width: 440px;
-    height: 650px;
-}
+    .hero .container img {
+        width: 440px;
+        height: 650px;
+        max-width: none;
+        margin-bottom: 0;
+    }
 
-.hero .container .content {
-    margin-top: 40px;
-    margin-left: 60px;
-}
+    .hero .container .content {
+        margin-top: 40px;
+        margin-left: 60px;
+    }
 
-.hero .container .content h3 {
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: #FF4D01;
-}
+    .hero .container .content h3 {
+        font-size: 20px;
+    }
 
-.hero .container .content h1 {
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 54px;
-    line-height: 61.99px;
-    letter-spacing: 0%;
-    width: 522px;
-    color: #191919;
-}
+    .hero .container .content h1 {
+        font-size: 54px;
+        line-height: 61.99px;
+        width: 522px;
+    }
 
-.hero .container .content .content-p {
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 26.01px;
-    letter-spacing: 0%;
-    color: #605E5D;
-    height: 121px;
-}
-.hero .container .content .projects {
-    margin-top: 7px;
-    margin-bottom: 20px;
-}
-.hero .container .content .projects ul {
-    display: flex;
-    gap: 86px;
-}
+    .hero .container .content .content-p {
+        font-size: 18px;
+        line-height: 26.01px;
+        height: 121px;
+    }
 
-.hero .container .content .projects ul span {
-    color: #FF4D01;
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 72px;
-    line-height: 84.02px;
-    letter-spacing: 0%;
-    text-align: center;
-}
+    .hero .container .content .projects {
+        margin-top: 7px;
+        margin-bottom: 20px;
+    }
 
-.hero .container .content .projects ul li {
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 72px;
-    line-height: 84.02px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #191919;
-}
+    .hero .container .content .projects ul {
+        justify-content: flex-start;
+        gap: 86px;
+    }
 
-.hero .container .content button {
-    background-color: rgba(245, 222, 179, 0);
-    width: 237px;
-    height: 75px;
-    opacity: 1;
-    border-width: 2px;
-    border: 2px solid #191919;
-    font-family: Barlow;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #191919;
-    cursor: pointer;
+    .hero .container .content .projects ul span,
+    .hero .container .content .projects ul li {
+        font-size: 72px;
+        line-height: 84.02px;
+    }
+
+    .hero .container .content button {
+        width: 237px;
+        height: 75px;
+    }
 }
